@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery DOM Traversal Demo</title>
+    
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Our JavaScript file -->
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>DOM Traversal and Manipulation Demo</h1>
+        
+        <p>This demo shows how jQuery can be used to traverse and manipulate the DOM.</p>
+        
+        <div id="familyTree">
+            <h2>Interactive Family Tree</h2>
+            
+            <!-- Parent element -->
+            <div id="parent" class="family-member">
+                <span class="name">Parent Element</span>
+                
+                <!-- First child element -->
+                <div id="firstChild" class="family-member">
+                    <span class="name">First Child</span>
+                    
+                    <!-- Grandchild elements -->
+                    <div id="grandchild1" class="family-member">
+                        <span class="name">Grandchild 1</span>
+                    </div>
+                    
+                    <div id="grandchild2" class="family-member">
+                        <span class="name">Grandchild 2</span>
+                    </div>
+                </div>
+                
+                <!-- Second child element -->
+                <div id="secondChild" class="family-member">
+                    <span class="name">Second Child</span>
+                </div>
+                
+                <!-- Third child element -->
+                <div id="thirdChild" class="family-member">
+                    <span class="name">Third Child</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="controls">
+            <h2>Traversal Controls</h2>
+            <button id="findParent">Find Parent</button>
+            <button id="findChildren">Find Children</button>
+            <button id="findSiblings">Find Siblings</button>
+            <button id="findFirst">Find First Child</button>
+            <button id="findLast">Find Last Child</button>
+            <button id="findAncestors">Find Ancestors</button>
+            <button id="findDescendants">Find Descendants</button>
+            <button id="resetAll">Reset All</button>
+        </div>
+        
+        <div id="manipulationDemo">
+            <h2>Manipulation Demo</h2>
+            <button id="addElement">Add Element</button>
+            <button id="removeElement">Remove Element</button>
+            <button id="moveElement">Move Element</button>
+            <button id="cloneElement">Clone Element</button>
+            <button id="wrapElement">Wrap Element</button>
+        </div>
+        
+        <div id="results">
+            <h2>Selected Elements:</h2>
+            <div id="selectedElements">Nothing selected yet. Click a button above to see jQuery traversal in action.</div>
+        </div>
+    </div>
+</body>
+</html>
