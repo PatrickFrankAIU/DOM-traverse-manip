@@ -2,6 +2,6 @@
 
 ## Demo for students in ITWEB program.    
 
-Hosted on pages: 
+Hosted on pages: https://patrickfrankaiu.github.io/DOM-traverse-manip/
 
 Patrick Frank, Instructor
